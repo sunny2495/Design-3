@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Vardhman Jain | Digital Visiting Card</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <main class="stage">
+        <section class="phone-mockup" aria-label="Digital visiting card">
+            <div class="phone-speaker"></div>
+
+            <article class="card">
+                <div class="hero">
+                    <img src="logo.png" alt="Clinic logo" class="logo" id="adminTrigger">
+
+                    <div class="orbit orbit-one">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <div class="orbit orbit-two">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <div class="orbit orbit-three">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+
+                    <div class="photo-ring">
+                        <img src="Photo - 3.jpg" alt="Dr. Vardhman Jain" class="doctor-img">
+                    </div>
+                </div>
+
+                <p class="eyebrow">Orthopedic and Arthroscopic Surgeon</p>
+                <h1>Dr. Vardhman Jain</h1>
+
+                <div class="badges" aria-label="Doctor highlights">
+                    <span><i class="fa-solid fa-award"></i> 15+ Years</span>
+                    <span><i class="fa-solid fa-house-medical"></i> Delhi Hospital</span>
+                    <span><i class="fa-solid fa-heart-pulse"></i> Quality Care</span>
+                </div>
+
+                <p class="hint">Click icons to interact</p>
+
+                <div class="actions" aria-label="Contact actions">
+                    <a href="tel:01141502511" class="action call" aria-label="Call Dr. Vardhman Jain">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call</span>
+                    </a>
+                    <a href="https://wa.me/919810103230" target="_blank" rel="noopener" class="action whatsapp" aria-label="Chat on WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="mailto:dr.vardhmanjain02@gmail.com" class="action email" aria-label="Send email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://drvardhmanjain.in" target="_blank" rel="noopener" class="action website" aria-label="Open website">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>Website</span>
+                    </a>
+                    <a href="https://www.google.com/maps/dir//Dr+Vardhman+jain,+Delhi+Hospital+1,+Ansari+Rd,+Daryaganj,+New+Delhi,+Delhi,+110002/@28.3988141,78.6909257,5096m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x390cfd83fb71f521:0x2bccfcef348ba079!2m2!1d77.2448569!2d28.6419007?" target="_blank" rel="noopener" class="action location" aria-label="Open location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Location</span>
+                    </a>
+                    <button type="button" class="action save" id="saveContact" aria-label="Save contact">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Save</span>
+                    </button>
+                </div> <br>
+
+                <p class="address">1, Ansari Road, Daryaganj, New Delhi - 110002</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Admin Analytics Modal -->
+    <div id="adminModal" class="admin-modal" style="display: none;">
+        <div class="admin-content">
+            <span class="admin-close">&times;</span>
+            <h2>📊 Analytics Dashboard</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Interactions</h3>
+                    <p class="stat-number" id="totalInteractions">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>📱 Mobile</h3>
+                    <p class="stat-number" id="mobileCount">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>💻 Desktop</h3>
+                    <p class="stat-number" id="desktopCount">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>📲 Tablet</h3>
+                    <p class="stat-number" id="tabletCount">0</p>
+                </div>
+            </div>
+            <div class="clicks-section">
+                <h3>Click Statistics</h3>
+                <div class="click-stats">
+                    <div class="click-item"><span>📞 Call</span><span id="callCount">0</span></div>
+                    <div class="click-item"><span>💬 WhatsApp</span><span id="whatsappCount">0</span></div>
+                    <div class="click-item"><span>✉️ Email</span><span id="emailCount">0</span></div>
+                    <div class="click-item"><span>🌐 Website</span><span id="websiteCount">0</span></div>
+                    <div class="click-item"><span>📍 Location</span><span id="locationCount">0</span></div>
+                    <div class="click-item"><span>💾 Save Contact</span><span id="saveCount">0</span></div>
+                </div>
+            </div>
+            <button class="clear-data" onclick="clearAnalytics()">🗑️ Clear All Data</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
